@@ -48,6 +48,11 @@ export default function main() {
   mainTitleH1.appendChild(document.createTextNode(mainTitleText));
   mainTitleSectionDiv.appendChild(mainTitleH1);
 
+  const mainTitleP = document.createElement("p");
+  const mainTitlePText = "919 - 555 - 5555";
+  mainTitleP.appendChild(document.createTextNode(mainTitlePText));
+  mainTitleSectionDiv.appendChild(mainTitleP);
+
   // New Section - <section id="info" aria-label="info-section" class="content">
   const infoSection = document.createElement("section");
   infoSection.setAttribute("id", "info");
