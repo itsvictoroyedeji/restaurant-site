@@ -126,7 +126,7 @@ nav > button {
 }
 
 /* Apply this style when tab is clicked */
-button.cover {
+button.cover.active {
   background-color: #f69f65;
   background: linear-gradient(to bottom, #f69f65, #f69f65, #fff);
 }
