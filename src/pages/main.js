@@ -25,7 +25,7 @@ export default function main() {
   mainSpan.appendChild(document.createTextNode(mainSpanText));
   mainDiv.appendChild(mainSpan);
 
-  // <section id="main-title" aria-label="main-title-section" class="content">
+  // First section - <section id="main-title" aria-label="main-title-section" class="content">
   const mainTitleSection = document.createElement("section");
   mainTitleSection.setAttribute("id", "main-title");
   mainTitleSection.setAttribute("aria-label", "main-title-section");
@@ -42,16 +42,17 @@ export default function main() {
   mainTitleSectionContainer.classList.add("main-title", "container-sm");
   mainTitleSectionDiv.appendChild(mainTitleSectionContainer);
 
-  // <h1> - Last element of section
+  // <h1> (Site Title)
   const mainTitleH1 = document.createElement("h1");
   const mainTitleText = "Sidney's Jollof Rice Bar";
   mainTitleH1.appendChild(document.createTextNode(mainTitleText));
-  mainTitleSectionDiv.appendChild(mainTitleH1);
+  mainTitleSectionContainer.appendChild(mainTitleH1);
 
+  // <p> - Last element of section
   const mainTitleP = document.createElement("p");
   const mainTitlePText = "919 - 555 - 5555";
   mainTitleP.appendChild(document.createTextNode(mainTitlePText));
-  mainTitleSectionDiv.appendChild(mainTitleP);
+  mainTitleSectionContainer.appendChild(mainTitleP);
 
   // New Section - <section id="info" aria-label="info-section" class="content">
   const infoSection = document.createElement("section");
